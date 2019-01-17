@@ -1,0 +1,16 @@
+{
+    "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestArgs": [
+        "Linked List"
+    ],
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./Linked List",
+        "-p",
+        "test_*.py"
+    ],
+    "python.unitTest.promptToConfigure": true
+}
