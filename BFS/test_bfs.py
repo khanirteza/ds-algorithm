@@ -1,5 +1,5 @@
 import pytest
-from bfs import Graph
+from graph import Graph
 from bfs import bfs
 
 g = Graph()
