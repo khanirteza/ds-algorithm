@@ -52,3 +52,14 @@ class LinkedList:
             cnt += 1
         
         return False
+
+    def reverse(self, node):
+        if node is None:
+            return
+        if node.next is None:
+            self.root = node
+            return node
+        p = self.reverse(node.next)
+        node.next = None
+        p.next = node
+        return node
