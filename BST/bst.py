@@ -45,18 +45,18 @@ class BST:
             print(node.data)
             self.traverse(node.right)
     
-    def min(self):
+    def get_min_node(self):
         node = self.root
-        min = None
+        minNode = None
         while node:
-            min = node.data
+            minNode = node
             node = node.left
-        return min
+        return minNode
     
-    def max(self):
+    def get_max_node(self):
         node = self.root
-        max = None
+        maxNode = None
         while node:
-            max = node.data
+            maxNode = node
             node = node.right
-        return max
+        return maxNode

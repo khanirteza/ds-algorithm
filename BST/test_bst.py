@@ -33,7 +33,8 @@ def test_search():
     assert bst.search(99) == False
 
 def test_min():
-    assert bst.min() == -23
+    assert bst.get_min_node().data == -23
+    assert bst.get_min_node().data != 1
 
 def test_max():
-    assert bst.max() == 100
+    assert bst.get_max_node().data == 100
