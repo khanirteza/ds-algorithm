@@ -32,12 +32,12 @@ class BST:
         node = self.root
         while node:
             if node.data == data:
-                return True
+                return node
             elif data < node.data:
                 node = node.left
             else:
                 node = node.right
-        return False
+        return None
 
     def traverse(self, node):
         if node is not None:

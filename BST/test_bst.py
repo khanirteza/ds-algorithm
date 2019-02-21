@@ -22,15 +22,15 @@ def test_traverse(capsys):
     assert captured.out == "-23\n1\n2\n3\n5\n50\n53\n53\n54\n87\n100\n"
 
 def test_search():
-    assert bst.search(53) == True
-    assert bst.search(0) == False
-    assert bst.search(22) == False
-    assert bst.search(54) == True
-    assert bst.search(3) == True
-    assert bst.search(87) == True
-    assert bst.search(1) == True
-    assert bst.search(1) == True
-    assert bst.search(99) == False
+    assert bst.search(53).data == 53
+    assert bst.search(0) == None
+    assert bst.search(22) == None
+    assert bst.search(54).data == 54
+    assert bst.search(3).data == 3
+    assert bst.search(87).data == 87
+    assert bst.search(1).data == 1
+    assert bst.search(1).data == 1
+    assert bst.search(99) == None
 
 def test_min():
     assert bst.get_min_node().data == -23
