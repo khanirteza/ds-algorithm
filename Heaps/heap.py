@@ -15,7 +15,7 @@ class Heap:
     
     def delete_min(self):
         ret = self.get_min()
-        if ret:
+        if ret is not None:
             self.heap[0], self.heap[-1] = self.heap[-1], self.heap[0]
             self.heap.pop()
             self.heapify_down()
