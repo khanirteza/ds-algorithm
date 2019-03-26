@@ -8,11 +8,11 @@ class Heap:
         if self.heap:
             return self.heap[0]
         return None
-    
+
     def insert(self, val):
         self.heap.append(val)
         self.heapify_up()
-    
+
     def delete_min(self):
         ret = self.get_min()
         if ret is not None:
@@ -45,7 +45,7 @@ class Heap:
                 if self.heap[i] > self.heap[c1]:
                     self.heap[i], self.heap[c1] = self.heap[c1], self.heap[i]
                 return
-    
+
     def swap(self, i, c1, c2):
         if self.heap[c1] < self.heap[c2]:
             self.heap[i], self.heap[c1] = self.heap[c1], self.heap[i]
